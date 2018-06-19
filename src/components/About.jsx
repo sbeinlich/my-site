@@ -12,7 +12,7 @@ const AdventurePic = styled.img`
   max-width: 1000px;
   max-height: 8000px;
 `
-const SecHead = styled.h1`
+const SecHead = styled.h2`
   color: #D6EAF8
 `
 

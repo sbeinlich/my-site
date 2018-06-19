@@ -36,7 +36,6 @@ const Portrait = styled.img`
   min-width: 300px;
   border-radius: 50%;
 `
-
 const LogoLink = styled.a`
   padding: 10px;
 `
