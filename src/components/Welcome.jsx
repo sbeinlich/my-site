@@ -43,7 +43,7 @@ const LogoLink = styled.a`
 class Welcome extends Component {
   render(){
     return(
-      <div>
+      <div id = "Welcome">
         <Wrapper className = "Welcome">
             <Title><b>Hey. I'm Scott.</b></Title>
             <Intro>I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the beautiful city of Ann Arbor.</Intro>
@@ -52,7 +52,7 @@ class Welcome extends Component {
             <br></br><br></br>
 
             <LogoLink href="https://www.linkedin.com/in/scott-beinlich/"><img src={linkedLogo} alt="My LinkedIn"/></LogoLink>
-            <LogoLink href="https://www.linkedin.com/in/scott-beinlich/"><img src={gitLogo} alt="My LinkedIn"/></LogoLink>
+            <LogoLink href="https://github.com/sbeinlich"><img src={gitLogo} alt="My LinkedIn"/></LogoLink>
 
             <br></br><br></br>
 
