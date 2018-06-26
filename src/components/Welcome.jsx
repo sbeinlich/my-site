@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import currentPic from '../images/currentPic.png';
 import linkedLogo from '../images/In-Black-34px-R.png';
-import gitLogo from '../images/GitHub-Mark-32px.png';
+import gitLogo from '../images/GitHub-Mark-32px.png'; 
 import RoundedButton from './RoundedButton.jsx';
 
 
@@ -52,7 +52,9 @@ class Welcome extends Component {
             <br></br><br></br>
 
             <LogoLink href="https://www.linkedin.com/in/scott-beinlich/"><img src={linkedLogo} alt="My LinkedIn"/></LogoLink>
-            <LogoLink href="https://github.com/sbeinlich"><img src={gitLogo} alt="My LinkedIn"/></LogoLink>
+            <LogoLink href="https://github.com/sbeinlich"><img src={gitLogo} alt="My Github"/></LogoLink>
+
+
 
             <br></br><br></br>
 

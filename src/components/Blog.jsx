@@ -1,20 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import vailSitting from '../images/VailSitting.JPG';
-
 
 const Wrapper = styled.section`
   padding: 3em;
   background: #212F3C;
 `;
-
-const AdventurePic = styled.img`
-  max-width: 1000px;
-  max-height: 8000px;
-  max-width: 100%;
-	height: auto;
-	width: auto\9;
-`
 const SecHead = styled.h1`
   font-size: 2em;
   font-family: 'Lato', sans-serif;
@@ -31,18 +21,19 @@ const Body = styled.p`
   margin-right: 150px;
 `;
 
-class About extends Component {
+class Blog extends Component {
   render(){
     return(
-      <div id = "About">
-        <Wrapper className = "About">
-          <SecHead>About Me</SecHead>
-          <AdventurePic src = {vailSitting}/>
-          <Body>Insert about section here</Body>
+      <div id = "Blog">
+        <Wrapper className = "Blog">
+          <SecHead>Blog</SecHead>
+          <Body>These are a few of my recent/favorite blog posts. </Body>
+          <Body>I enjoy expressing my thoughts on tech, business, and philosophy from my unique point-of-view.</Body>
+          {/* Insert blog posts LOL */}
         </Wrapper>
       </div>
     );
   }
 }
 
-export default About;
+export default Blog;
