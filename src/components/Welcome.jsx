@@ -9,26 +9,25 @@ import RoundedButton from './RoundedButton.jsx';
 
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
-// Create a <Title> react component that renders an <h1> w
 const Title = styled.h1`
     font-size: 3em;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    color: #212F3C;
+    color: ${props => props.color}
 `;
 
 const Intro = styled.p`
     font-size: 1.25em;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    color: #212F3C;
+    color: ${props => props.color}
     margin-left: 150px;
     margin-right: 150px;
 `;
 
 const Wrapper = styled.section`
     padding: 3em;
-    background: #D6EAF8;
+    background: ${props => props.background_color}
 `;
 
 const Portrait = styled.img`
@@ -47,9 +46,9 @@ class Welcome extends Component {
     render(){
         return(
             <div id = "Welcome">
-                <Wrapper className = "Welcome">
-                        <Title id = "title"><b>Hey. I'm Scott.</b></Title>
-                        <Intro>I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the beautiful city of Ann Arbor.</Intro>
+                <Wrapper className = "Welcome" background_color="#D6EAF8">
+                        <Title id = "title" color="#212F3C"><b>Hey. I'm Scott.</b></Title>
+                        <Intro color="212F3C">I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the beautiful city of Ann Arbor.</Intro>
                         <Portrait src = {currentPic}/>
 
                         <br></br><br></br>

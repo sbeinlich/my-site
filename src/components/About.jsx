@@ -5,7 +5,7 @@ import vailSitting from '../images/VailSitting.JPG';
 
 const Wrapper = styled.section`
   padding: 3em;
-  background: ${props => props.background};
+  background: ${props => props.background_color};
 `;
 
 const AdventurePic = styled.img`
@@ -35,7 +35,7 @@ class About extends Component {
     render(){
         return(
             <div id = "About">
-                <Wrapper className = "About" background = "#212F3C">
+                <Wrapper className = "About" background_color = "#212F3C">
                     <SecHead color = "#D6EAF8">About Me</SecHead>
                     <AdventurePic src = {vailSitting}/>
                     <Body color = "#D6EAF8">Insert about section here</Body>

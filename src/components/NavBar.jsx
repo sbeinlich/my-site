@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
     padding: .25em;
-    background: #212F3C;
+    background: ${props => props.background_color};
     height: 40px;
     position: fixed;
     top: 0;
@@ -22,13 +22,13 @@ const A = styled.a `
     font-size: 1.25em;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    color:    #D6EAF8;
+    color: ${props => props.color}
     text-decoration: none;
     float:right;
     margin-top: 0px;
 
     &:hover {
-            color: #FFDC00;
+        color: ${props => props.hovercolor};
     }
 `
 
@@ -38,13 +38,12 @@ const SJBLink = styled.a `
     font-size: 1.25em;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    color:    #D6EAF8;
+    color: ${props => props.color};
     text-decoration: none;
     float:left;
     margin-top: 0px
-
     &:hover {
-            color: #FFDC00;
+        color: ${props => props.hovercolor};
     }
 `
 
@@ -52,13 +51,13 @@ class NavBar extends Component {
     render(){
         return(
             <div>
-                <Wrapper>
-                    <SJBLink href = "#Welcome" className="nav-link">Scott Beinlich</SJBLink>
+                <Wrapper background_color = "#212F3C">
+                    <SJBLink href="#Welcome" className="nav-link" color="#D6EAF8" hovercolor = "#FFDC00">Scott Beinlich</SJBLink>
                     <Ul className = "NavBar">
-                            <li className = "nav-item"> <A href = "#Contact" className="nav-link">Contact</A></li>
-                            <li className = "nav-item"> <A href = "#Blog" className="nav-link">Blog</A></li>
-                            <li className = "nav-item"> <A href = "#Projects" className="nav-link">Projects</A></li>
-                            <li className = "nav-item"> <A href = "#About" className="nav-link">About</A></li>
+                            <li className = "nav-item"> <A href = "#Contact" className="nav-link" color ="#D6EAF8" hovercolor = "#FFDC00">Contact</A></li>
+                            <li className = "nav-item"> <A href = "#Blog" className="nav-link" color ="#D6EAF8" hovercolor = "#FFDC00">Blog</A></li>
+                            <li className = "nav-item"> <A href = "#Projects" className="nav-link" color ="#D6EAF8" hovercolor = "#FFDC00">Projects</A></li>
+                            <li className = "nav-item"> <A href = "#About" className="nav-link"  color ="#D6EAF8" hovercolor = "#FFDC00">About</A></li>
                     </Ul>
                 </Wrapper>
                 </div>

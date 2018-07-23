@@ -17,7 +17,7 @@ class Footer extends Component {
     render(){
         return(
             <div>
-                <Wrapper className = "Footer">
+                <Wrapper className = "Footer" background="#212F3C"> 
                     <PageInfo>This site was created by me, Scott Beinlich, as an independent React project.</PageInfo>
                     <PageInfo>Please feel free to contact me with any suggestions, questions, comments, or inquiries!</PageInfo>
                 </Wrapper>

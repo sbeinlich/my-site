@@ -9,6 +9,7 @@ const LinkCard = styled.div`
     font-family: 'Lato', sans-serif;
     display: flex;
     justify-content: space-between;
+    border-color: ${props => props.border_color};
 
     &:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);

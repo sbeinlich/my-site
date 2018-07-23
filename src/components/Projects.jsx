@@ -9,7 +9,7 @@ const SecHead = styled.h1`
     font-size: 2em;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    color: #212F3C;
+    color: ${props => props.color}
 `;
 
 const Body = styled.p`
@@ -26,10 +26,10 @@ class Projects extends Component {
         return(
             <div id = "Projects">
                 <Wrapper className = "Projects">
-                    <SecHead>Projects</SecHead>
+                    <SecHead color="#212F3C">Projects</SecHead>
                     <Body>Here are some short descriptions of the projects I've worked on.</Body>
                     <Body>Because some of these projects include unpublished code for school and other organizations, please contact me for more details!</Body>
-                    {/* Insert blog posts LOL */}
+                    {/* Insert projects LOL */}
                 </Wrapper>
             </div>
         );

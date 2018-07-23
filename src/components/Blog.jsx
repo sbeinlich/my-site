@@ -4,7 +4,7 @@ import LinkCard from './LinkCard.jsx';
 
 const Wrapper = styled.section`
     padding: 3em;
-    background: ${props => props.background};
+    background: ${props => props.background_color};
 `;
 const SecHead = styled.h1`
     font-size: 2em;
@@ -32,24 +32,24 @@ class Blog extends Component {
     render(){
         return(
             <div id = "Blog">
-                <Wrapper className = "Blog" background = "#212F3C">
-                    <SecHead color = "#D6EAF8">Blog</SecHead>
-                    <Body color="#D6EAF8">These are a few of my recent/favorite blog posts. </Body>
-                    <Body color="#D6EAF8">I enjoy expressing my thoughts on things like tech, business, philosophy, and music.</Body>
+                <Wrapper className = "Blog" background_color = "#D6EAF8">
+                    <SecHead color = "#212F3C">Blog</SecHead>
+                    <Body color="#212F3C">These are a few of my recent/favorite blog posts. </Body>
+                    <Body color="#212F3C">I enjoy expressing my thoughts on things like tech, business, philosophy, and music.</Body>
                     {/* Insert blog posts LOL */}
                     <CardDiv>
-                            <LinkCard
-                                background_color="#D6EAF8">
-                                <Body color="blue">
-                                        Hi
-                                </Body>
-                            </LinkCard>
-                            <LinkCard
-                                background_color="#D6EAF8">
-                                <Body color="blue">
-                                        Hi
-                                </Body>
-                            </LinkCard>
+                        <LinkCard
+                            background_color="#D6EAF8">
+                            <Body color="212F3C">
+								Hi
+                            </Body>
+                        </LinkCard>
+                        <LinkCard
+                            background_color="#D6EAF8">
+                            <Body color="212F3C">
+								hi
+							</Body>
+                        </LinkCard>
                     </CardDiv>
                 </Wrapper>
             </div>
