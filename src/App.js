@@ -11,8 +11,11 @@ import Projects from './components/Projects.jsx';
 import './App.css';
 
 class App extends Component {
+  
   render() {
+
     return (
+
       <div className = "App">
         <NavBar/>
         <Welcome/>
