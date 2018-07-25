@@ -7,8 +7,6 @@ import RoundedButton from './RoundedButton.jsx';
 
 
 
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
 const Title = styled.h1`
     font-size: 3em;
     font-family: 'Lato', sans-serif;
@@ -53,11 +51,11 @@ class Welcome extends Component {
 
                         <br></br><br></br>
 
-                        <LogoLink href="https://www.linkedin.com/in/scott-beinlich/" target = "_blank">
+                        <LogoLink href="https://www.linkedin.com/in/scott-beinlich/" target="_blank">
                             <img src={linkedLogo} alt="My LinkedIn"/>
                         </LogoLink>
 
-                        <LogoLink href="https://github.com/sbeinlich" target = "_blank">
+                        <LogoLink href="https://github.com/sbeinlich" target="_blank">
                             <img src={gitLogo} alt="My Github"/>
                         </LogoLink>
 
