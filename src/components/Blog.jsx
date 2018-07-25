@@ -15,7 +15,7 @@ const SecHead = styled.h1`
 `;
 
 const Body = styled.p`
-    font-size: 1.25em;
+    font-size: 1em;
     font-family: 'Lato', sans-serif;
     text-align: center;
     color: ${props => props.color};
@@ -44,14 +44,14 @@ class Blog extends Component {
                     <Body color="#212F3C">I enjoy expressing my thoughts on things like tech, business, philosophy, and music.</Body>
                     <CardDiv>
 						<ButtonLink href="https://sbeinlich.tumblr.com/post/176204814416/an-unexpected-connection" target="_blank">
-							<LinkCard background_color="#D6EAF8" border_color="#D6EAF8" target="_blank">
+							<LinkCard background_color="#D6EAF8" border_color="#212F3C" target="_blank">
 	                            <Body color="#212F3C">
 									Hi
 	                            </Body>
 	                        </LinkCard>
 						</ButtonLink>
 						<ButtonLink href="https://sbeinlich.tumblr.com/" target="_blank">
-							<LinkCard background_color="#D6EAF8" border_color="#D6EAF8">
+							<LinkCard background_color="#D6EAF8" border_color="#212F3C">
 	                            <Body color="#212F3C">
 									Hello
 	                            </Body>
