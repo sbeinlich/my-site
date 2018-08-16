@@ -9,6 +9,7 @@ const Wrapper = styled.section`
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 99999;
 `;
 
 const Ul = styled.ul`
@@ -60,7 +61,7 @@ class NavBar extends Component {
                             <li className = "nav-item"> <A href = "#About" className="nav-link"  color ="#D6EAF8" hovercolor = "#FFDC00">About</A></li>
                     </Ul>
                 </Wrapper>
-                </div>
+            </div>
         );
     }
 }

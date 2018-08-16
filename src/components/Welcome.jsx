@@ -67,7 +67,7 @@ class Welcome extends Component {
 
                         <br></br><br></br>
 
-                        <ButtonLink href="https://drive.google.com/open?id=1yKZrrqvYnYzOSksD_W8eO6hE9KJsSacb" target = "_blank">
+                        <ButtonLink href="https://drive.google.com/open?id=1cMgKAq8gncrBSowWbtUUHj9W0tEd4wpF" target="_blank">
                             <RoundedButton
                                 type="submit"
                                 color='#212F3C'
