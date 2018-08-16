@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import LinkCard from './LinkCard';
 
 const Wrapper = styled.section`
     padding: 3em;
@@ -22,6 +21,15 @@ const Body = styled.p`
     margin-right: 150px;
 `;
 
+const Disclaimer = styled.p`
+    font-size: 12;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #212F3C;
+    margin-left: 150px;
+    margin-right: 150px;
+`;
+
 const CardDiv = styled.div`
     display: flex;
     justify-content: space-between;
@@ -29,9 +37,12 @@ const CardDiv = styled.div`
     margin-right: 20%;
 `;
 
-const ButtonLink = styled.a`
-    text-decoration: none;
-`;
+
+
+const ParagraphContainer = styled.div`
+    max-width: 960px;
+    margin: auto;
+`
 
 class Projects extends Component {
     render(){
@@ -39,18 +50,13 @@ class Projects extends Component {
             <div id = "Projects">
                 <Wrapper className = "Projects" background_color="#D6EAF8">
                     <SecHead color="#212F3C">Projects</SecHead>
-                    <Body>Here are some short descriptions of the projects I've worked on.</Body>
-                    <Body>Because some of these projects include unpublished code for school and other organizations, please contact me for more details on my work!</Body>
-                    <CardDiv>
-						<ButtonLink href="https://sbeinlich.tumblr.com/post/176204814416/an-unexpected-connection" target="_blank">
-							<LinkCard background_color="#D6EAF8" border_color="#212F3C" target="_blank">
-	                            <Body color="#212F3C">
-									Hi
-	                            </Body>
-	                        </LinkCard>
-						</ButtonLink>
-						
-                    </CardDiv>
+                    <ParagraphContainer>
+                        <Body>Here are some short descriptions of some CS-related projects I've worked on.</Body>
+                     </ParagraphContainer>
+
+                    <ParagraphContainer>
+                        <Disclaimer><i>Some of these projects include unpublished code due to school and organizations rules. Please contact me if you have questions on my work.</i></Disclaimer>
+                    </ParagraphContainer>
                 </Wrapper>
             </div>
         );

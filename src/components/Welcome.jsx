@@ -5,8 +5,6 @@ import linkedLogo from '../images/In-Black-34px-R.png';
 import gitLogo from '../images/GitHub-Mark-32px.png';
 import RoundedButton from './RoundedButton.jsx';
 
-
-
 const Title = styled.h1`
     font-size: 3em;
     font-family: 'Lato', sans-serif;
@@ -40,13 +38,20 @@ const ButtonLink = styled.a`
     text-decoration: none;
 `
 
+const ParagraphContainer = styled.div`
+    max-width: 960px;
+    margin: auto;
+`
 class Welcome extends Component {
     render(){
         return(
             <div id = "Welcome">
                 <Wrapper className = "Welcome" background_color="#D6EAF8">
                         <Title id = "title" color="#212F3C"><b>Hey. I'm Scott.</b></Title>
-                        <Intro color="212F3C">I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the beautiful city of Ann Arbor.</Intro>
+                        <ParagraphContainer>
+                            <Intro color="212F3C">I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the beautiful city of Ann Arbor.</Intro>
+                        </ParagraphContainer>
+                        
                         <Portrait src = {currentPic}/>
 
                         <br></br><br></br>
