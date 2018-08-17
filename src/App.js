@@ -8,6 +8,7 @@ import Projects from './components/Projects.jsx';
 
 
 import './App.css';
+import Experience from './components/Experience';
 
 class App extends Component {
   
@@ -20,6 +21,7 @@ class App extends Component {
         <Welcome/>
         <About/>
         <Projects/>
+        <Experience/>
         <Footer/>
       </div>
     );

@@ -12,9 +12,9 @@ const Wrapper = styled.section`
 const AdventurePic = styled.img`
     max-width: 1000px;
     max-height: 8000px;
-    max-width: 80%%;
+    max-width: 80%;
 	height: auto;
-    width: auto9;
+    width: auto;
 `
 const SecHead = styled.h1`
     font-size: 2em;
@@ -53,7 +53,7 @@ class About extends Component {
                     <AdventurePic src = {lakeChutes}/>
                     <AdventurePic src = {vailSitting}/>
                     <ParagraphContainer>
-                        <Body color="#D6EAF8"> I’m a ski-club officer in U of M’s ski club, and I love to be active and play sports, especially soccer. I’m also very into indie music, long-boarding, and cars.</Body>
+                        <Body color="#D6EAF8"> I’m a ski-club officer in U of M’s ski club, and I love to be active and play sports, especially soccer. I’m also very into indie rock music, long-boarding, and cars.</Body>
                         <Body color="#D6EAF8">Thank you for taking the time to visit my page—it’s a pleasure to share a little bit about myself with you. Please feel free to reach out to me!</Body>
                     </ParagraphContainer>
                     
