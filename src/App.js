@@ -8,6 +8,10 @@ import Contact from './components/Contact.jsx';
 import './App.css';
 import Experience from './components/Experience';
 
+const Page = styled.div`
+    margin: 80px auto 0 auto;
+`;
+
 class App extends Component {
   
   render() {
@@ -15,13 +19,15 @@ class App extends Component {
     return (
 
       <div className = "App">
-        <NavBar/>
-        <Welcome/>
-        <About/>
-        <Projects/>
-        <Experience/>
-        <Contact/>
-        <Footer/>
+       <Page>
+          <NavBar/>
+          <Welcome/>
+          <About/>
+          <Projects/>
+          <Experience/>
+          <Contact/>
+          <Footer/>
+        </Page>
       </div>
     );
   }
