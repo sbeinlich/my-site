@@ -7,6 +7,8 @@ import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
 import './App.css';
 import Experience from './components/Experience';
+import styled from 'styled-components';
+
 
 const Page = styled.div`
     margin: 80px auto 0 auto;
