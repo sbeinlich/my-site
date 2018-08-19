@@ -4,9 +4,7 @@ import Welcome from './components/Welcome.jsx';
 import About from './components/About.jsx';
 import Footer from './components/Footer.jsx';
 import Projects from './components/Projects.jsx';
-
-
-
+import Contact from './components/Contact.jsx';
 import './App.css';
 import Experience from './components/Experience';
 
@@ -22,6 +20,7 @@ class App extends Component {
         <About/>
         <Projects/>
         <Experience/>
+        <Contact/>
         <Footer/>
       </div>
     );

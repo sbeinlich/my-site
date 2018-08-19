@@ -12,7 +12,6 @@ import {
 import mhacksImg from '../images/mhacks-logo-img.png';
 import heidelbergImg from '../images/heidelberg-img.jpg';
 import rovImg from '../images/ROV-img.jpg';
-import bagOfWordsImg from '../images/bag-of-words-img.jpg';
 
 import RoundedButton from './RoundedButton';
 
@@ -83,7 +82,7 @@ class Experience extends Component {
                                 <CardText>
                                     <b>December 2018 - Present</b> <br/>Collaborate with app development committee for U of M's annual hackathon, programming and developing the web app for hackathon with MERN Stack (MongoDB, Express, React/Redux, Node.js), building web-dev proficiency outside of curriculum.
                                 </CardText>
-                                <ButtonLink href="https://mhacks.org/" target = "_blank">
+                                <ButtonLink href="https://mhacks.org/" target="_blank">
                                     <RoundedButton
                                         type="submit"
                                         color='#212F3C'
@@ -93,7 +92,7 @@ class Experience extends Component {
                                     </RoundedButton>
                                 </ButtonLink>
                                 <br/><br/>
-                                <ButtonLink href="https://github.com/mhacks" target = "_blank">
+                                <ButtonLink href="https://github.com/mhacks" target="_blank">
                                     <RoundedButton
                                         type="submit"
                                         color='#212F3C'
@@ -115,7 +114,7 @@ class Experience extends Component {
                                     <b>May 2018 - August 2018</b> <br/>Worked at intersection of business and technology at Ohio’s largest distributing company, providing tech support to a team of 1,600 individuals. Resolved daily tickets and honed technnical communication skills while completing a variety of projects with clients internal and external to the company. 
                                 <br/>
                                 <br/>
-                                <ButtonLink href="https://drive.google.com/open?id=1mLI_3wImoLoraHuwQXt4bDPQvyMJzzUX" target = "_blank">
+                                <ButtonLink href="https://drive.google.com/open?id=1mLI_3wImoLoraHuwQXt4bDPQvyMJzzUX" target="_blank">
                                     <RoundedButton
                                         type="submit"
                                         color='#212F3C'
@@ -139,7 +138,7 @@ class Experience extends Component {
                                 <CardText>
                                     <b>January 2018 - March 2018</b><br/>Collaborated with other engineers, designing, building, and testing hardware and software to create a fast and maneuverable remotely operated vehicle. Competed against other teams and presented a report detailing our prototype to BP representatives, demonstrating plans for full-scale development and improvements.
                                 </CardText>
-                                <ButtonLink href="https://drive.google.com/drive/folders/1OeqBwEpRU5ybXaId1GRbI547cWPfdj_c?usp=sharing">
+                                <ButtonLink href="https://drive.google.com/drive/folders/1OeqBwEpRU5ybXaId1GRbI547cWPfdj_c?usp=sharing" target="_blank">
                                     <RoundedButton
                                         type="submit"
                                         color='#212F3C'
