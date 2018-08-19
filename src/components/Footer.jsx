@@ -5,8 +5,7 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
     background: ${props => props.background};
     padding: .75em;
-    width: 100%; 
-    width: 100vw;
+    
 `;
 
 const PageInfo = styled.p`

@@ -7,8 +7,6 @@ import lakeChutes from '../images/breck_lake_chutes.JPG';
 const Wrapper = styled.section`
   padding: 3em;
   background: ${props => props.background_color};
-  width: 100%; 
-    width: 100vw;
 `;
 
 const AdventurePic = styled.img`

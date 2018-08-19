@@ -32,8 +32,6 @@ const RoundedButton = styled.button`
 const Wrapper = styled.section`
   padding: 4em;
   background: ${props => props.background_color};
-  width: 100%; 
-  width: 100vw;
 `;
 
 const SecHead = styled.h1`

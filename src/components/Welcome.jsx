@@ -24,8 +24,6 @@ const Intro = styled.p`
 const Wrapper = styled.section`
     padding: 3em;
     background: ${props => props.background_color}
-    width: 100%; 
-    width: 100vw;
 `;
 
 const Portrait = styled.img`
