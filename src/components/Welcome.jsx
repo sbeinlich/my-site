@@ -47,7 +47,7 @@ class Welcome extends Component {
         return(
             <div id = "Welcome">
                 <Wrapper className = "Welcome" background_color="#D6EAF8">
-                        <Title id = "title" color="#212F3C"><b>Hey. I'm Scott.</b></Title>
+                        <Title id = "title" color="#212F3C"><b>Hey. I'm Scott!</b></Title>
                         <ParagraphContainer>
                             <Intro color="212F3C">I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the beautiful city of Ann Arbor.</Intro>
                         </ParagraphContainer>
