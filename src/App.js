@@ -12,6 +12,7 @@ import styled from 'styled-components';
 
 const Page = styled.div`
     margin: 80px auto 0 auto;
+    
 `;
 
 class App extends Component {
