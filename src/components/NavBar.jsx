@@ -9,8 +9,8 @@ const Wrapper = styled.section`
     position: fixed;
     top: 0;
     width: 100%;
-    
     z-index: 99999;
+    margin-bottom: 0;
     
 `;
 
