@@ -99,7 +99,7 @@ class Projects extends Component {
                                 Used  pointers, arrays, structs, strings, basic I/O operations, and C-style “object-based” programming with a seam-carving algorithm to produce content-aware image resizing.
                                 <br/>
                                 <br/>
-                                <ButtonLink href="https://github.com/sbeinlich/my-site" target = "_blank">
+                                <ButtonLink href="#Contact">
                                     <RoundedButton
                                         type="submit"
                                         color='#212F3C'
