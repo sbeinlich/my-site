@@ -13,7 +13,7 @@ const Title = styled.h1`
 `;
 
 const Intro = styled.p`
-    font-size: 1.25em;
+    font-size: 20px;
     font-family: 'Lato', sans-serif;
     text-align: center;
     color: ${props => props.color}
@@ -40,41 +40,46 @@ const ButtonLink = styled.a`
 
 const ParagraphContainer = styled.div`
     max-width: 960px;
+    width: 100%;
     margin: auto;
+    min-width: 600px;
+   
 `
+
 class Welcome extends Component {
     render(){
         return(
             <div id = "Welcome">
                 <Wrapper className = "Welcome" background_color="#D6EAF8">
-                        <Title id = "title" color="#212F3C"><b>Hey. I'm Scott!</b></Title>
                         <ParagraphContainer>
-                            <Intro color="212F3C">I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the beautiful city of Ann Arbor.</Intro>
-                        </ParagraphContainer>
+                                <Title id = "title" color="#212F3C"><b>Hey. I'm Scott!</b></Title>
+                                <Intro color="212F3C">I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the beautiful city of Ann Arbor.</Intro>
+                       
                         
-                        <Portrait src = {currentPic}/>
+                            <Portrait src = {currentPic}/>
 
-                        <br></br><br></br>
+                            <br></br><br></br>
 
-                        <LogoLink href="https://www.linkedin.com/in/scott-beinlich/" target="_blank">
-                            <img src={linkedLogo} alt="My LinkedIn"/>
-                        </LogoLink>
+                            <LogoLink href="https://www.linkedin.com/in/scott-beinlich/" target="_blank">
+                                <img src={linkedLogo} alt="My LinkedIn"/>
+                            </LogoLink>
 
-                        <LogoLink href="https://github.com/sbeinlich" target="_blank">
-                            <img src={gitLogo} alt="My Github"/>
-                        </LogoLink>
+                            <LogoLink href="https://github.com/sbeinlich" target="_blank">
+                                <img src={gitLogo} alt="My Github"/>
+                            </LogoLink>
 
 
-                        <br></br><br></br>
+                            <br></br><br></br>
 
-                        <ButtonLink href="https://drive.google.com/open?id=1cMgKAq8gncrBSowWbtUUHj9W0tEd4wpF" target="_blank">
-                            <RoundedButton
-                                type="submit"
-                                color='#212F3C'
-                                >
-                                    Resume
-                            </RoundedButton>
-                        </ButtonLink>
+                            <ButtonLink href="https://drive.google.com/open?id=1cMgKAq8gncrBSowWbtUUHj9W0tEd4wpF" target="_blank">
+                                <RoundedButton
+                                    type="submit"
+                                    color='#212F3C'
+                                    >
+                                        Resume
+                                </RoundedButton>
+                            </ButtonLink>
+                        </ParagraphContainer>
                 </Wrapper>
             </div>
         );
