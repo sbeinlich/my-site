@@ -17,11 +17,12 @@ const Ul = styled.ul`
     list-style-type: none;
     padding: 0px;
     margin-top: 0px;
+   
 `
 const A = styled.a `
     display: block;
     padding: 10px;
-    font-size: 1.25em;
+    font-size: 1.39vm;
     font-family: 'Lato', sans-serif;
     text-align: center;
     color: ${props => props.color}
@@ -29,15 +30,20 @@ const A = styled.a `
     float:right;
     margin-top: 0px;
 
+    @media (max-width: 460px) {
+        display:none
+    }
+    
     &:hover {
         color: ${props => props.hovercolor};
     }
+    
 `
 
 const SJBLink = styled.a `
     display: block;
     padding: 10px;
-    font-size: 1.25em;
+    font-size: 1.39vm;
     font-family: 'Lato', sans-serif;
     text-align: center;
     color: ${props => props.color};

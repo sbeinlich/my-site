@@ -7,7 +7,12 @@ import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
 import './App.css';
 import Experience from './components/Experience';
+import styled from 'styled-components';
 
+const Page = styled.div`
+    width:100%
+    min-width:700px;
+`;
 
 class App extends Component {
   
@@ -16,6 +21,7 @@ class App extends Component {
     return (
 
       <div className = "App">
+        <Page>
           <NavBar/>
           <Welcome/>
           <About/>
@@ -23,6 +29,8 @@ class App extends Component {
           <Experience/>
           <Contact/>
           <Footer/>
+        </Page>
+         
       </div>
     );
   }

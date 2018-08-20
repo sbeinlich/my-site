@@ -30,6 +30,8 @@ const Portrait = styled.img`
     max-width: 300px;
     min-width: 300px;
     border-radius: 50%;
+    width:100%;
+    height: auto;
 `
 const LogoLink = styled.a`
     padding: 10px;
@@ -40,10 +42,9 @@ const ButtonLink = styled.a`
 
 const ParagraphContainer = styled.div`
     max-width: 960px;
-    width: 100%;
     margin: auto;
-    min-width: 600px;
-   
+    height: auto;
+    width: auto;
 `
 
 class Welcome extends Component {
@@ -55,31 +56,30 @@ class Welcome extends Component {
                                 <Title id = "title" color="#212F3C"><b>Hey. I'm Scott!</b></Title>
                                 <Intro color="212F3C">I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the beautiful city of Ann Arbor.</Intro>
                        
-                        
-                            <Portrait src = {currentPic}/>
+                        <Portrait src = {currentPic}/>
 
-                            <br></br><br></br>
+                        <br></br><br></br>
 
-                            <LogoLink href="https://www.linkedin.com/in/scott-beinlich/" target="_blank">
-                                <img src={linkedLogo} alt="My LinkedIn"/>
-                            </LogoLink>
+                        <LogoLink href="https://www.linkedin.com/in/scott-beinlich/" target="_blank">
+                            <img src={linkedLogo} alt="My LinkedIn"/>
+                        </LogoLink>
 
-                            <LogoLink href="https://github.com/sbeinlich" target="_blank">
-                                <img src={gitLogo} alt="My Github"/>
-                            </LogoLink>
+                        <LogoLink href="https://github.com/sbeinlich" target="_blank">
+                            <img src={gitLogo} alt="My Github"/>
+                        </LogoLink>
 
 
-                            <br></br><br></br>
+                        <br></br><br></br>
 
-                            <ButtonLink href="https://drive.google.com/open?id=1cMgKAq8gncrBSowWbtUUHj9W0tEd4wpF" target="_blank">
-                                <RoundedButton
-                                    type="submit"
-                                    color='#212F3C'
-                                    >
-                                        Resume
-                                </RoundedButton>
-                            </ButtonLink>
-                        </ParagraphContainer>
+                        <ButtonLink href="https://drive.google.com/open?id=1cMgKAq8gncrBSowWbtUUHj9W0tEd4wpF" target="_blank">
+                            <RoundedButton
+                                type="submit"
+                                color='#212F3C'
+                                >
+                                    Resume
+                            </RoundedButton>
+                        </ButtonLink>
+                         </ParagraphContainer>
                 </Wrapper>
             </div>
         );
