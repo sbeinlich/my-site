@@ -10,8 +10,7 @@ const Wrapper = styled.section`
     top: 0;
     width: 100%;
     z-index: 99999;
-    margin-bottom: 0;
-    
+    margin-bottom: 0 !important;
 `;
 
 const Ul = styled.ul`
