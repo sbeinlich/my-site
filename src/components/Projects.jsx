@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import {
     Card,
     CardBody,
-    CardFooter,
-    CardHeader,
     CardImageHeader,
     CardText,
     CardTitle,

@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import contactPic from '../images/contact-me-img.JPG';
-import {
-    Card,
-    CardBody,
-    CardFooter,
-    CardHeader,
-    CardImageHeader,
-    CardText,
-    CardTitle,
-  } from 'styled-card-component';
+
 
 const RoundedButton = styled.button`
     padding: 10px 0;
@@ -83,9 +75,7 @@ const InfoListItem = styled.li`
     text-align: center;
     color: ${props => props.color};
 `
-const A = styled.a`
-    text-decoration: none;
-`
+
 
 class Contact extends Component {
     render(){

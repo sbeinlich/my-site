@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import {
     Card,
     CardBody,
-    CardFooter,
-    CardHeader,
     CardImageHeader,
     CardText,
     CardTitle,
@@ -39,14 +37,7 @@ const Body = styled.p`
     margin-right: 150px;
 `;
 
-const Disclaimer = styled.p`
-    font-size: 12;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    color: #212F3C;
-    margin-left: 150px;
-    margin-right: 150px;
-`;
+
 
 const OneCardDiv = styled.div`
     display: table;
