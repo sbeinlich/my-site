@@ -38,7 +38,6 @@ const Body = styled.p`
 `;
 
 
-
 const OneCardDiv = styled.div`
     display: table;
     width: 50%;

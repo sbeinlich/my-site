@@ -4,6 +4,7 @@ import vailSitting from '../images/VailSitting.JPG';
 import lakeChutes from '../images/breck_lake_chutes.JPG';
 
 
+
 const Wrapper = styled.section`
   padding: 3em;
   background: ${props => props.background_color};

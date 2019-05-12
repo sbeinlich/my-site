@@ -48,13 +48,70 @@ const ParagraphContainer = styled.div`
 `
 
 class Welcome extends Component {
+    constructor(props) {
+        // Initialize mutable state
+        super(props);
+
+        this.state={
+            weather_description: "",
+            weather_id: "",
+        };
+
+        this.handleWeatherChange = this.handleWeatherChange.bind(this);
+      }
+
+    componentDidMount() {
+        // Call Weather API
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Ann%20Arbor&appid=${process.env.REACT_APP_WEATHER_API_KEY}`, { credentials: 'same-origin' })
+            .then((response) => {
+            if (!response.ok) throw Error(response.statusText);
+            return response.json();
+            })
+            .then((data) => {
+                this.setState({
+                    weather_id: data.weather[0].id / 100,
+                });
+                this.handleWeatherChange();
+            })
+            .catch(error => console.log(error)); // eslint-disable-line no-console
+    }
+
+    handleWeatherChange() {
+        switch(this.state.weather_id){
+            case 2:
+                this.setState({
+                    weather_description: "stormy⛈"
+                });
+                break;
+            case 3:
+                this.setState({
+                    weather_description: "rainy🌧"
+                });
+                break;
+            case 5:
+                this.setState({
+                    weather_description: "rainy🌧"
+                });
+                break;
+            case 6:
+                this.setState({
+                    weather_description: "snowy🌨"
+                });
+                break;
+            default:
+                this.setState({
+                    weather_description: "sunny☀️"
+                });
+        }
+    }
+
     render(){
         return(
             <div id = "Welcome">
                 <Wrapper className = "Welcome" background_color="#D6EAF8">
                         <ParagraphContainer>
                                 <Title id = "title" color="#212F3C"><b>Hey. I'm Scott!</b></Title>
-                                <Intro color="212F3C">I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the beautiful city of Ann Arbor.</Intro>
+                                <Intro color="212F3C">I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the beautiful, <b> currently {this.state.weather_description}</b> city of Ann Arbor.</Intro>
                        
                         <Portrait src = {currentPic}/>
 
