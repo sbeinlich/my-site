@@ -10,6 +10,8 @@ import {
 import mhacksImg from '../images/mhacks-logo-img.png';
 import heidelbergImg from '../images/heidelberg-img.jpg';
 import rovImg from '../images/ROV-img.jpg';
+import servicenowImg from '../images/servicenow.jpg';
+
 
 import RoundedButton from './RoundedButton';
 
@@ -96,6 +98,31 @@ class Experience extends Component {
                             </Card>
 
                             <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
+                                <CardImageHeader src={servicenowImg} />
+                                <CardBody>
+                                <CardTitle>
+                                    Software Engineering Intern at ServiceNow
+                                </CardTitle>
+                                <CardText>
+                                    <b>May 2019 - August 2019</b> <br/>Full stack web development on ServiceNow's Platform UX team. Developed across the full stack of Web technologies - JavaScript, Angular.js, React, HTML, CSS, Java and GraphQL in a Scrum-based Agile development process.
+                                <br/>
+                                <br/>
+                                <ButtonLink href="https://www.servicenow.com/" target="_blank">
+                                    <RoundedButton
+                                        type="submit"
+                                        color='#212F3C'
+                                    
+                                        >
+                                            Company Website
+                                    </RoundedButton>
+                                </ButtonLink>
+                                </CardText>
+                                </CardBody>
+                            </Card>
+                        </TwoCardDiv>
+
+                        <TwoCardDiv>
+                            <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
                                 <CardImageHeader src={heidelbergImg} />
                                 <CardBody>
                                 <CardTitle>
@@ -117,9 +144,6 @@ class Experience extends Component {
                                 </CardText>
                                 </CardBody>
                             </Card>
-                        </TwoCardDiv>
-
-                        <OneCardDiv>
                             <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
                                 <CardImageHeader src={rovImg} />
                                 <CardBody>
@@ -140,7 +164,7 @@ class Experience extends Component {
                                 </ButtonLink>
                                 </CardBody>
                             </Card>
-                        </OneCardDiv>
+                        </TwoCardDiv>
                     </ParagraphContainer>
                 </Wrapper>
             </div>

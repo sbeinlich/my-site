@@ -8,9 +8,9 @@ import {
     CardTitle,
   } from 'styled-card-component';
 import mySiteImg from '../images/my-site-img.png';
-import computerVisionImg from '../images/computer-vision-img.png';
-import euchreImg from '../images/euchre-img.png';
-import bagOfWordsImg from '../images/bag-of-words-img.jpg';
+import mhacksImg from '../images/MhacksLogo.jpg';
+import wikipediaImg from '../images/wikipedia.png';
+import instagramImg from '../images/instagram.jpg';
 
 import RoundedButton from './RoundedButton';
 
@@ -73,7 +73,7 @@ class Projects extends Component {
                                     My Personal Site
                                 </CardTitle>
                                 <CardText>
-                                    The source code for my first React project, this site!  
+                                    The source code for this site!  
                                 </CardText>
                                 <ButtonLink href="https://github.com/sbeinlich/my-site" target = "_blank">
                                     <RoundedButton
@@ -88,13 +88,13 @@ class Projects extends Component {
                             </Card>
 
                             <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
-                                <CardImageHeader src={computerVisionImg} />
+                                <CardImageHeader src={instagramImg} />
                                 <CardBody>
                                 <CardTitle>
-                                    Computer Vision and Image Resizing
+                                    Instagram Clone
                                 </CardTitle>
                                 <CardText>
-                                Used  pointers, arrays, structs, strings, basic I/O operations, and C-style “object-based” programming with a seam-carving algorithm to produce content-aware image resizing.
+                                An Instagram-like client-side dynamic social media platform that utilizes Python Flask backend, a SQLite database, a ReactJS frontend and AJAX calls to a custom REST API.
                                 <br/>
                                 <br/>
                                 <ButtonLink href="#Contact">
@@ -113,13 +113,13 @@ class Projects extends Component {
 
                         <CardDiv>
                             <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
-                                <CardImageHeader src={euchreImg} />
+                                <CardImageHeader src={wikipediaImg} />
                                 <CardBody>
                                 <CardTitle>
-                                    Euchre Card Game
+                                    Wikipedia Search Engine
                                 </CardTitle>
                                 <CardText>
-                                    Used abstract data types, object-oriented programming, polymorphism, std::array, std::vector, and C++ style strings to create a Euchre game in which a combination of up to 4 human and AI players can compete.
+                                Built a scalable search engine for wikipedia that is similar to a commercial search engine using MapReduce to build an inverted-index, info-retrieval methods like Tf-idf and PageRank scores, and a basic frontend GUI. 
                                 </CardText>
                                 <ButtonLink href="#Contact">
                                     <RoundedButton
@@ -134,22 +134,22 @@ class Projects extends Component {
                             </Card>
 
                             <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
-                                <CardImageHeader src={bagOfWordsImg} />
+                                <CardImageHeader src={mhacksImg} />
                                 <CardBody>
                                 <CardTitle>
-                                    Machine Learning and Natural Language Processing in Forum Posts
+                                    MHacks Web App
                                 </CardTitle>
                                 <CardText>
-                                    Used natural language processing and machine learning techniques along with recursion, binary trees, templates, comparators, and the map data structure to automatically identify the subject of forum posts on a school forum.
+                                    I help maintain and update the official MHacks Hackathon Web Application, implementing new features between hackathons!
                                 <br/>
                                 <br/>
-                                <ButtonLink href="#Contact">
+                                <ButtonLink href="https://github.com/mhacks/mhacks-web" target = "_blank">
                                     <RoundedButton
                                         type="submit"
                                         color='#212F3C'
                                     
                                         >
-                                            Contact Me
+                                            Github Repository
                                     </RoundedButton>
                                 </ButtonLink>
                                 </CardText>
