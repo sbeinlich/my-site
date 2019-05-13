@@ -69,7 +69,7 @@ class Welcome extends Component {
             })
             .then((data) => {
                 this.setState({
-                    weather_id: data.weather[0].id / 100,
+                    weather_id: Math.floor(data.weather[0].id / 100),
                 });
                 this.handleWeatherChange();
             })
@@ -77,6 +77,7 @@ class Welcome extends Component {
     }
 
     handleWeatherChange() {
+        console.log(this.state.weather_id)
         switch(this.state.weather_id){
             case 2:
                 this.setState({
