@@ -98,6 +98,11 @@ class Welcome extends Component {
                     weather_description: "currently snowy 🌨"
                 });
                 break;
+            case 8:
+                this.setState({
+                    weather_description: "currently cloudy ☁️"
+                });
+                break;
             default:
                 this.setState({
                     weather_description: "currently sunny ☀️"
