@@ -117,7 +117,7 @@ class Welcome extends Component {
                 <Wrapper className = "Welcome" background_color="#D6EAF8">
                         <ParagraphContainer>
                                 <Title id = "title" color="#212F3C"><b>Hey. I'm Scott!</b></Title>
-                                <Intro color="212F3C">I'm an aspiring <b>software development engineer</b>, future <b>business leader</b>, <b>lifelong learner</b>, and <b>adventurer</b> studying computer science engineering at the University of Michigan in the <b>  {this.state.weather_description}</b> city of Ann Arbor.</Intro>
+                                <Intro color="212F3C">I'm an aspiring <b>software development engineer</b> studying computer science engineering at the University of Michigan in the <b>  {this.state.weather_description}</b> city of Ann Arbor.</Intro>
                        
                         <Portrait src = {currentPic}/>
 
