@@ -9,8 +9,8 @@ import {
   } from 'styled-card-component';
 import mySiteImg from '../images/my-site-img.png';
 import mhacksImg from '../images/MhacksLogo.jpg';
-import wikipediaImg from '../images/wikipedia.png';
 import instagramImg from '../images/instagram.jpg';
+import slackImg from '../images/slack.jpg';
 
 import RoundedButton from './RoundedButton';
 
@@ -65,6 +65,63 @@ class Projects extends Component {
                     <SecHead color="#212F3C">Projects</SecHead>
                     <ParagraphContainer>
                         <Body>Here are some short descriptions of some CS-related projects I've worked on.</Body>
+
+                        <CardDiv>
+                            <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
+                                <CardImageHeader src={slackImg} />
+                                <CardBody>
+                                <CardTitle>
+                                    Slack Mentorship Bot
+                                </CardTitle>
+                                <CardText>
+                                    Slack Mentorship Bot leveraging Slack API, Express, and Node.js to automate ‘hacker’ inquiry and mentor pairing workflow at MHacks.
+                                </CardText>
+                                <ButtonLink href="https://github.com/mhacks/mhacks-web/blob/master/server/routes/api/mentorshipbot.js" target = "_blank">
+                                    <RoundedButton
+                                        type="submit"
+                                        color='#212F3C'
+                                    
+                                        >
+                                            Github Repository
+                                    </RoundedButton>
+                                </ButtonLink>
+                                </CardBody>
+                            </Card>
+
+                            <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
+                                <CardImageHeader src={mhacksImg} />
+                                <CardBody>
+                                <CardTitle>
+                                    MHacks Web App
+                                </CardTitle>
+                                <CardText>
+                                    I help maintain and update the official MHacks Hackathon Web Application, implementing new features between hackathons!
+                                    We use a MERN Stack (MongoDB, Express, React/Redux, Node.js).
+                                <br/>
+                                <br/>
+                                <ButtonLink href="https://github.com/mhacks/mhacks-web" target = "_blank">
+                                    <RoundedButton
+                                        type="submit"
+                                        color='#212F3C'
+                                    
+                                        >
+                                            Github Repository
+                                    </RoundedButton>
+                                </ButtonLink>
+                                <br/><br/>
+                                <ButtonLink href="https://mhacks.org/" target="_blank">
+                                    <RoundedButton
+                                        type="submit"
+                                        color='#212F3C'
+                                    
+                                        >
+                                            MHacks Site
+                                    </RoundedButton>
+                                </ButtonLink>
+                                </CardText>
+                                </CardBody>
+                            </Card>
+                        </CardDiv>
                         <CardDiv>
                             <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
                                 <CardImageHeader src={mySiteImg} />
@@ -104,52 +161,6 @@ class Projects extends Component {
                                     
                                         >
                                             Contact Me
-                                    </RoundedButton>
-                                </ButtonLink>
-                                </CardText>
-                                </CardBody>
-                            </Card>
-                        </CardDiv>
-
-                        <CardDiv>
-                            <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
-                                <CardImageHeader src={wikipediaImg} />
-                                <CardBody>
-                                <CardTitle>
-                                    Wikipedia Search Engine
-                                </CardTitle>
-                                <CardText>
-                                Built a scalable search engine for wikipedia that is similar to a commercial search engine using MapReduce to build an inverted-index, info-retrieval methods like Tf-idf and PageRank scores, and a basic frontend GUI. 
-                                </CardText>
-                                <ButtonLink href="#Contact">
-                                    <RoundedButton
-                                        type="submit"
-                                        color='#212F3C'
-                                    
-                                        >
-                                            Contact Me
-                                    </RoundedButton>
-                                </ButtonLink>
-                                </CardBody>
-                            </Card>
-
-                            <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
-                                <CardImageHeader src={mhacksImg} />
-                                <CardBody>
-                                <CardTitle>
-                                    MHacks Web App
-                                </CardTitle>
-                                <CardText>
-                                    I help maintain and update the official MHacks Hackathon Web Application, implementing new features between hackathons!
-                                <br/>
-                                <br/>
-                                <ButtonLink href="https://github.com/mhacks/mhacks-web" target = "_blank">
-                                    <RoundedButton
-                                        type="submit"
-                                        color='#212F3C'
-                                    
-                                        >
-                                            Github Repository
                                     </RoundedButton>
                                 </ButtonLink>
                                 </CardText>

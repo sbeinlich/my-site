@@ -63,8 +63,8 @@ class NavBar extends Component {
                     <SJBLink href="#Welcome" className="nav-link" color="#D6EAF8" hovercolor = "#FFDC00">Scott Beinlich</SJBLink>
                     <Ul className = "NavBar">
                             <li className = "nav-item"> <A href = "#Contact" className="nav-link" color ="#D6EAF8" hovercolor = "#FFDC00">Contact</A></li>
-                            <li className = "nav-item"> <A href = "#Experience" className="nav-link" color ="#D6EAF8" hovercolor = "#FFDC00">Experience</A></li>
                             <li className = "nav-item"> <A href = "#Projects" className="nav-link" color ="#D6EAF8" hovercolor = "#FFDC00">Projects</A></li>
+                            <li className = "nav-item"> <A href = "#Experience" className="nav-link" color ="#D6EAF8" hovercolor = "#FFDC00">Experience</A></li>
                             <li className = "nav-item"> <A href = "#About" className="nav-link"  color ="#D6EAF8" hovercolor = "#FFDC00">About</A></li>
                     </Ul>
                 </Wrapper>

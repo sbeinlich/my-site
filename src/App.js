@@ -25,8 +25,8 @@ class App extends Component {
           <NavBar/>
           <Welcome/>
           <About/>
-          <Projects/>
           <Experience/>
+          <Projects/>
           <Contact/>
           <Footer/>
         </Page>

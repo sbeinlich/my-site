@@ -7,9 +7,7 @@ import {
     CardText,
     CardTitle,
   } from 'styled-card-component';
-import mhacksImg from '../images/mhacks-logo-img.png';
-import heidelbergImg from '../images/heidelberg-img.jpg';
-import rovImg from '../images/ROV-img.jpg';
+import michiganIMG from '../images/block-m-feed.jpg';
 import servicenowImg from '../images/servicenow.jpg';
 
 
@@ -64,39 +62,8 @@ class Experience extends Component {
                 <Wrapper className = "Experience" background_color="#D6EAF8">
                     <SecHead color="#212F3C">Experience</SecHead>
                     <ParagraphContainer>
-                        <Body>Here is a summary of my recent work, team, and organizational experience.</Body>
+                        <Body>Here is a summary of my recent work experience.</Body>
                         <TwoCardDiv>
-                            <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
-                                <CardImageHeader src={mhacksImg} />
-                                <CardBody>
-                                <CardTitle>
-                                    MHacks Tech Core Team Member
-                                </CardTitle>
-                                <CardText>
-                                    <b>December 2018 - Present</b> <br/>Collaborate with app development committee for U of M's annual hackathon, programming and developing the web app for hackathon with MERN Stack (MongoDB, Express, React/Redux, Node.js), building web-dev proficiency outside of curriculum.
-                                </CardText>
-                                <ButtonLink href="https://mhacks.org/" target="_blank">
-                                    <RoundedButton
-                                        type="submit"
-                                        color='#212F3C'
-                                    
-                                        >
-                                            MHacks Site
-                                    </RoundedButton>
-                                </ButtonLink>
-                                <br/><br/>
-                                <ButtonLink href="https://github.com/mhacks" target="_blank">
-                                    <RoundedButton
-                                        type="submit"
-                                        color='#212F3C'
-                                    
-                                        >
-                                            Github Repository
-                                    </RoundedButton>
-                                </ButtonLink>
-                                </CardBody>
-                            </Card>
-
                             <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
                                 <CardImageHeader src={servicenowImg} />
                                 <CardBody>
@@ -104,67 +71,55 @@ class Experience extends Component {
                                     Software Engineering Intern at ServiceNow
                                 </CardTitle>
                                 <CardText>
-                                    <b>May 2019 - August 2019</b> <br/>Full stack web development on ServiceNow's Platform UX team. Developed across the full stack of Web technologies - JavaScript, Angular.js, React, HTML, CSS, Java and GraphQL in a Scrum-based Agile development process.
+                                    <b>May 2019 - August 2019</b> <br/>Full stack web development on ServiceNow's Virtual Agent team. Developed across the full stack of Web technologies - JavaScript, React, HTML, CSS, and Java in a Scrum-based Agile development process.
                                 <br/>
                                 <br/>
-                                <ButtonLink href="https://www.servicenow.com/" target="_blank">
+                                <ButtonLink href="https://www.linkedin.com/in/scott-beinlich/" target="_blank">
                                     <RoundedButton
                                         type="submit"
                                         color='#212F3C'
                                     
                                         >
-                                            Company Website
+                                            Employer Recommendation (LinkedIn)
+                                    </RoundedButton>
+                                </ButtonLink>
+                                <br/><br/>
+                                <ButtonLink href="https://www.servicenow.com/products/virtual-agent.html" target="_blank">
+                                    <RoundedButton
+                                        type="submit"
+                                        color='#212F3C'
+                                    
+                                        >
+                                            Virtual Agent
                                     </RoundedButton>
                                 </ButtonLink>
                                 </CardText>
                                 </CardBody>
                             </Card>
+
+                            <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
+                                <CardImageHeader src={michiganIMG} />
+                                <CardBody>
+                                <CardTitle>
+                                    EECS485: Web Systems Instructional Aide
+                                </CardTitle>
+                                <CardText>
+                                    <b>September 2019 - Present</b><br/>Prepare and instruct labs with 40 students and hold office hours weekly to teach web concepts. Additionally, I work to develop our project specifications, the project autograder (Python), and I also write test questions.
+                                </CardText>
+                                <ButtonLink href="https://eecs485staff.github.io/eecs485.org/" target="_blank">
+                                    <RoundedButton
+                                        type="submit"
+                                        color='#212F3C'
+                                    
+                                        >
+                                            Course Website
+                                    </RoundedButton>
+                                </ButtonLink>
+                                </CardBody>
+                            </Card>
+
                         </TwoCardDiv>
 
-                        <TwoCardDiv>
-                            <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
-                                <CardImageHeader src={heidelbergImg} />
-                                <CardBody>
-                                <CardTitle>
-                                    IT Intern at Heidelberg Distributing Company
-                                </CardTitle>
-                                <CardText>
-                                    <b>May 2018 - August 2018</b> <br/>Worked at intersection of business and technology at Ohio’s largest distributing company, providing tech support to a team of 1,600 individuals. Resolved daily tickets and honed technnical communication skills while completing a variety of projects with clients internal and external to the company. 
-                                <br/>
-                                <br/>
-                                <ButtonLink href="https://drive.google.com/open?id=1mLI_3wImoLoraHuwQXt4bDPQvyMJzzUX" target="_blank">
-                                    <RoundedButton
-                                        type="submit"
-                                        color='#212F3C'
-                                    
-                                        >
-                                            Employer Recommendation Letter
-                                    </RoundedButton>
-                                </ButtonLink>
-                                </CardText>
-                                </CardBody>
-                            </Card>
-                            <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
-                                <CardImageHeader src={rovImg} />
-                                <CardBody>
-                                <CardTitle>
-                                    BP Naval Architecture & Engineering Underwater ROV Design Competition
-                                </CardTitle>
-                                <CardText>
-                                    <b>January 2018 - March 2018</b><br/>Collaborated with other engineers, designing, building, and testing hardware and software to create a fast and maneuverable remotely operated vehicle. Competed against other teams and presented a report detailing our prototype to BP representatives, demonstrating plans for full-scale development and improvements.
-                                </CardText>
-                                <ButtonLink href="https://drive.google.com/drive/folders/1OeqBwEpRU5ybXaId1GRbI547cWPfdj_c?usp=sharing" target="_blank">
-                                    <RoundedButton
-                                        type="submit"
-                                        color='#212F3C'
-                                    
-                                        >
-                                            Final Presentation and Report
-                                    </RoundedButton>
-                                </ButtonLink>
-                                </CardBody>
-                            </Card>
-                        </TwoCardDiv>
                     </ParagraphContainer>
                 </Wrapper>
             </div>
