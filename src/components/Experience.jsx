@@ -8,7 +8,7 @@ import {
     CardTitle,
   } from 'styled-card-component';
 import michiganIMG from '../images/block-m-feed.jpg';
-import servicenowImg from '../images/servicenow.jpg';
+import servicenowImg from '../images/now.png';
 
 
 import RoundedButton from './RoundedButton';
