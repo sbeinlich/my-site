@@ -69,7 +69,7 @@ class Welcome extends Component {
             })
             .then((data) => {
                 this.setState({
-                    weather_id: Math.floor(data.weather[0].id / 100),
+                    weather_id: data.weather[0].id,
                 });
                 this.handleWeatherChange();
             })
@@ -77,8 +77,8 @@ class Welcome extends Component {
     }
 
     handleWeatherChange() {
-        console.log(this.state.weather_id)
-        switch(this.state.weather_id){
+        let weather_id = Math.floor(this.state.weather_id / 100);
+        switch(weather_id){
             case 2:
                 this.setState({
                     weather_description: "currently stormy ⛈"
@@ -99,14 +99,31 @@ class Welcome extends Component {
                     weather_description: "currently snowy 🌨"
                 });
                 break;
-            case 8:
+            case 7:
                 this.setState({
                     weather_description: "currently cloudy ☁️"
                 });
                 break;
+            case 8:
+                if(this.state.weather_id === 800){
+                    this.setState({
+                        weather_description: "currently clear ☀️"
+                    });
+                }
+                else if(this.state.weather_id < 803){
+                    this.setState({
+                        weather_description: "currently clear 🌤"
+                    });
+                }
+                else{
+                    this.setState({
+                        weather_description: "currently cloudy ☁️"
+                    });
+                }
+                break;
             default:
                 this.setState({
-                    weather_description: "currently sunny ☀️"
+                    weather_description: ""
                 });
         }
     }
