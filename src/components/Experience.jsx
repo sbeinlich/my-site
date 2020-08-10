@@ -8,6 +8,7 @@ import {
     CardTitle,
   } from 'styled-card-component';
 import michiganIMG from '../images/block-m-feed.jpg';
+import facebookImg from '../images//facebookLogo.png';
 import servicenowImg from '../images/now.png';
 
 
@@ -65,6 +66,28 @@ class Experience extends Component {
                         <Body>Here is a summary of my recent work experience.</Body>
                         <TwoCardDiv>
                             <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
+                                <CardImageHeader src={facebookImg} />
+                                <CardBody>
+                                <CardTitle>
+                                    Software Engineering Intern at Facebook
+                                </CardTitle>
+                                <CardText>
+                                    <b>May 2020 - August 2020</b> <br/>Full stack developer on Facebook's Creator Studio team. Primarily worked with React, Flux, Hack (PHP), GraphQL, Relay, and Jest E2E. Also explored a little Objective-C at the end (iOS).
+                                <br/>
+                                <br/>
+                                <ButtonLink href="https://www.facebook.com/creatorstudio/" target="_blank">
+                                    <RoundedButton
+                                        type="submit"
+                                        color='#212F3C'
+                                        >
+                                            Creator Studio
+                                    </RoundedButton>
+                                </ButtonLink>
+                                </CardText>
+                                </CardBody>
+                            </Card>
+
+                            <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
                                 <CardImageHeader src={servicenowImg} />
                                 <CardBody>
                                 <CardTitle>
@@ -97,7 +120,9 @@ class Experience extends Component {
                                 </CardBody>
                             </Card>
 
-                            <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
+                        </TwoCardDiv>
+                        <OneCardDiv>
+                        <Card width="18rem" font-family= "'Lato', sans-serif" color="#212F3C" borderColor="#212F3C" display="table-cell">
                                 <CardImageHeader src={michiganIMG} />
                                 <CardBody>
                                 <CardTitle>
@@ -117,8 +142,7 @@ class Experience extends Component {
                                 </ButtonLink>
                                 </CardBody>
                             </Card>
-
-                        </TwoCardDiv>
+                        </OneCardDiv>
 
                     </ParagraphContainer>
                 </Wrapper>
