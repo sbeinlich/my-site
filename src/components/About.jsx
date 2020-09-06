@@ -44,7 +44,7 @@ class About extends Component {
           <SecHead color="#D6EAF8">About Me</SecHead>
           <ParagraphContainer>
             <Body color="#D6EAF8">
-              My name is Scott Beinlich I am a 3rd-year computer science
+              My name is Scott Beinlich I am a 4th-year computer science
               engineering student at the University of Michigan. I live in Ann
               Arbor, and I was born in and grew up in Dayton, Ohio. In addition
               to my CS courseload, I spend a lot of a time on personal projects,
