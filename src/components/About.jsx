@@ -44,21 +44,20 @@ class About extends Component {
           <SecHead color="#D6EAF8">About Me</SecHead>
           <ParagraphContainer>
             <Body color="#D6EAF8">
-              My name is Scott Beinlich I am a 4th-year computer science
-              engineering student at the University of Michigan. I live in Ann
-              Arbor, and I was born in and grew up in Dayton, Ohio. In addition
-              to my CS courseload, I spend a lot of a time on personal projects,
-              team projects, and learning/practicing new CS concepts.
+              My name is Scott Beinlich. I am a software engineer at Facebook. I
+              currently live in Seattle, but I was born in and grew up in
+              Dayton, Ohio. I studied CS at University of Michigan in Ann Arbor
+              and graduated in 2020.
             </Body>
             <Body color="#D6EAF8">
               CS and software development has given me an outlet through which I
               am able to combine critical thinking, problem solving and
               creativity with technical skills to build things I am excited
-              about. I am hoping to work as a software development engineer and
-              continue to contribute to the exciting tech world.
+              about.
             </Body>
             <Body color="#D6EAF8">
-              As for my hobbies, I love skiing and backpacking.
+              As for my hobbies, I love skiing, snowboarding, soccer, and
+              hiking/backpacking.
             </Body>
           </ParagraphContainer>
 
@@ -66,9 +65,8 @@ class About extends Component {
           <AdventurePic src={backpackingImg} />
           <ParagraphContainer>
             <Body color="#D6EAF8">
-              I’m a ski-club officer in U of M’s ski club, and I love to be
-              active and play sports, especially soccer. I also love surfing and
-              listening to music.
+              I was head of U of M’s ski club, and I love to be active and play
+              sports.
             </Body>
             <Body color="#D6EAF8">
               Thank you for taking the time to visit my page—it’s a pleasure to

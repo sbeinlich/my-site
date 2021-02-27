@@ -138,9 +138,9 @@ class Welcome extends Component {
               <b>Hey. I'm Scott!</b>
             </Title>
             <Intro color="212F3C">
-              I'm an aspiring <b>software development engineer</b> studying
-              computer science engineering at the University of Michigan in the{" "}
-              <b> {this.state.weather_description}</b> city of Ann Arbor.
+              I'm a <b>software engineer</b> at Facebook living in the{" "}
+              <b>{this.state.weather_description}</b> city of Seattle with a
+              Computer Science B.S.E. from the University of Michigan.
             </Intro>
 
             <Portrait src={currentPic} />
