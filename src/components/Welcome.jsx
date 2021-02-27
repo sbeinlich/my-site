@@ -139,7 +139,7 @@ class Welcome extends Component {
             </Title>
             <Intro color="212F3C">
               I'm a <b>software engineer</b> at Facebook living in the{" "}
-              <b>{this.state.weather_description}</b> city of Seattle with a
+              <b>{this.state.weather_description}</b> city of Seattle. I have a
               Computer Science B.S.E. from the University of Michigan.
             </Intro>
 
