@@ -29,8 +29,6 @@ const Wrapper = styled.section`
 const Portrait = styled.img`
   max-width: 300px;
   min-width: 300px;
-  border-radius: 50%;
-  width: 100%;
   height: auto;
 `;
 const LogoLink = styled.a`
