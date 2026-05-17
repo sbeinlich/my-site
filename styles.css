@@ -1,0 +1,269 @@
+:root {
+    --bg: #F5EEE0;
+    --text: #2F2318;
+    --text-muted: #7A6755;
+    --accent: #3D6B4E;
+    --accent-hover: #2B5038;
+
+    --border: #DDD4C4;
+    --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
+    z-index: 100;
+}
+
+.nav-name {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.nav-name:hover {
+    color: var(--accent);
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-left: 1.75rem;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero {
+    padding: 5rem 0 3.5rem;
+}
+
+.hero h1 {
+    font-family: var(--font-serif);
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+}
+
+.intro {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    max-width: 560px;
+    margin-bottom: 1.75rem;
+}
+
+.links a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.links a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.experience {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.experience h2 {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2.25rem;
+    color: var(--accent);
+}
+
+.role {
+    margin-bottom: 2.25rem;
+}
+
+.role h3 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.role-meta {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+}
+
+
+.education {
+    margin-top: 2.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border);
+}
+
+.education h3 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.education .role-meta {
+    margin-bottom: 0;
+}
+
+.outside {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.outside h2 {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+.outside > p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.photo-roll {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.photo-roll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.photo-roll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.photo-roll::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+}
+
+.photo-roll figure {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.photo-roll img {
+    display: block;
+    height: 320px;
+    width: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.resume-link {
+    margin-top: 2rem;
+}
+
+.resume-link a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.resume-link a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+footer {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+footer p {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        padding: 1.5rem 1.25rem 0;
+    }
+
+    main {
+        padding: 0 1.25rem;
+    }
+
+    .hero {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .nav-links a {
+        margin-left: 1.25rem;
+        font-size: 0.85rem;
+    }
+
+    footer {
+        padding: 1.5rem 1.25rem;
+    }
+}
